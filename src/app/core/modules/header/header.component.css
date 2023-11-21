@@ -1,0 +1,59 @@
+.container_header {
+  width: 100%;
+  background-color: black;
+}
+
+header {
+  width: auto;
+  height: 100px;
+  display: flex;
+  padding: 0 200px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid white;
+}
+
+.router_link a {
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 600;
+  margin-left: 20px;
+  font-family: cursive;
+}
+
+.log_text {
+  display: flex;
+  align-items: center;
+}
+
+.title_solar {
+  color: white;
+  font-size: 22px;
+  font-weight: 600;
+  margin-left: 20px;
+  font-family: cursive;
+}
+.img-logo {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1440px) {
+  header {
+    padding: 0 60px;
+  }
+}
+
+@media (max-width: 1320px) {
+  header {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 0 10px;
+    height: auto;
+  }
+}

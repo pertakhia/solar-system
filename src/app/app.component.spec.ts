@@ -1,16 +1,15 @@
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
+import { HeaderComponent } from './core/modules/header/header.component';
 import { AppComponent } from './app.component';
+import { MaterialModule } from './material/material.module';
+import { FooterComponent } from './core/modules/footer/footer.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [
-        RouterTestingModule
-      ],
-      declarations: [
-        AppComponent
-      ],
+      imports: [RouterTestingModule, MaterialModule],
+      declarations: [AppComponent, HeaderComponent, FooterComponent],
     }).compileComponents();
   });
 
@@ -26,10 +25,11 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('solar-system');
   });
 
-  it('should render title', () => {
+  // Now, the 'app-header' component should be recognized
+  it('should render header component', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('solar-system app is running!');
+    expect(compiled.querySelector('app-header')).toBeTruthy();
   });
 });

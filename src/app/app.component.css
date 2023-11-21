@@ -1,0 +1,13 @@
+.background {
+  background-image: url("../assets/images/background_stars_grid.jpg");
+  height: 100lvh;
+  width: 100%;
+}
+
+.discover_text {
+  color: white;
+  font-size: 50px;
+  font-weight: 600;
+  margin-left: 20px;
+  font-family: cursive;
+}
