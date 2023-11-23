@@ -39,6 +39,49 @@ header {
   cursor: pointer;
 }
 
+.search_container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search_input {
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid white;
+  padding: 0 10px;
+  margin-left: 16px;
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: cursive;
+}
+
+.search_icon {
+  color: black;
+  font-size: 30px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 5px;
+}
+.search_input:focus {
+  outline: none;
+  border: 1px solid gray;
+}
+
+.active {
+  border-bottom: 1px solid gray;
+}
+
 @media screen and (max-width: 1440px) {
   header {
     padding: 0 60px;
@@ -55,5 +98,8 @@ header {
   header {
     padding: 0 10px;
     height: auto;
+  }
+  .search_container {
+    display: none;
   }
 }

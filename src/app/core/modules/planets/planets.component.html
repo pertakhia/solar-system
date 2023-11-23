@@ -1,0 +1,19 @@
+<h1>all planets</h1>
+<div class="planets_container">
+  <div class="planet_card" *ngFor="let planet of planets">
+    <div class="planet_info">
+      <h2>{{ planet.name }}</h2>
+      <div class="planet_description">{{ planet.description }}</div>
+      <p>
+        planet satellites: <span> {{ planet.satellites }}</span>
+      </p>
+      <p>
+        planet radius: <span>{{ planet.radius }}</span>
+      </p>
+      <p>
+        planet gravity: <span>{{ planet.gravitation }}</span>
+      </p>
+      <a class="read_more" routerLink="/planets/{{ planet.id }}">Read more</a>
+    </div>
+  </div>
+</div>

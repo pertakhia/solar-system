@@ -1,12 +1,20 @@
 <section class="container_header">
   <header>
     <div class="log_text">
-      <img src="assets/images/outer-space.png" alt="logo" class="img-logo" />
-      <span class="title_solar">solar system</span>
+      <img
+        src="assets/images/outer-space.png"
+        alt="logo"
+        class="img-logo"
+        routerLink="/home"
+      />
+      <div class="search_container">
+        <input class="search_input" type="text" placeholder="Search" />
+        <mat-icon class="search_icon">search</mat-icon>
+      </div>
     </div>
     <div class="router_link">
-      <a routerLink="/home">Home</a>
-      <a routerLink="/about">About</a>
+      <a routerLink="/home" routerLinkActive="active">Home</a>
+      <a routerLink="/planets" routerLinkActive="active">Planets</a>
     </div>
   </header>
 </section>

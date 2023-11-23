@@ -11,6 +11,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { HeaderComponent } from './core/modules/header/header.component';
 import { FooterComponent } from './core/modules/footer/footer.component';
+import { HomeComponent } from './core/modules/home/home.component';
+import { PlanetsComponent } from './core/modules/planets/planets.component';
+import { PlanetDetailsComponent } from './core/modules/planets/planet-details/planet-details.component';
 
 @NgModule({
   schemas: [CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA],
@@ -20,7 +23,7 @@ import { FooterComponent } from './core/modules/footer/footer.component';
     AppRoutingModule,
     BrowserAnimationsModule,
   ],
-  declarations: [AppComponent, HeaderComponent, FooterComponent],
+  declarations: [AppComponent, HeaderComponent, FooterComponent, HomeComponent, PlanetsComponent, PlanetDetailsComponent],
   providers: [],
   bootstrap: [AppComponent],
 })

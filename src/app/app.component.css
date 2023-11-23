@@ -1,6 +1,6 @@
 .background {
   background-image: url("../assets/images/background_stars_grid.jpg");
-  height: 100lvh;
+  min-height: 100vh;
   width: 100%;
 }
 
